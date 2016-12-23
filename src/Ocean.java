@@ -8,4 +8,9 @@ public class Ocean {
         //hi
         // this is a test
     }
+
+    // method for frame
+    public static void oceanBg(){
+
+    }
 }
