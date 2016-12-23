@@ -1,5 +1,5 @@
 /**
  * Created by benjaminmacmillan1 on 12/6/16.
  */
-public class Player {
+public class Player extends Ocean{
 }
