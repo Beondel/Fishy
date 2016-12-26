@@ -5,8 +5,9 @@ import java.awt.*;
 
 public class Ocean {
     public static void main(String[] args){
-        //hi
+
         DrawingPanel p = new DrawingPanel(1000, 720);
+        Graphics g = p.getGraphics();
     }
 
     // method for frame
