@@ -9,9 +9,7 @@ public class Ocean {
         DrawingPanel p = new DrawingPanel(1200, 720);
         p.setBackground(Color.BLUE);
         Graphics g = p.getGraphics();
-
         oceanBg(g, p);
-
 
         Random r = new Random();
         // speed is -50 to 50
@@ -22,7 +20,6 @@ public class Ocean {
         int position = r.nextInt(72) * 10 + 10;
 
         Fish bob = new Fish(speed, size, position, true);
-
         // draw the fish
         drawFish(g, p, bob.getSpeed(), bob.getPosition(), bob.getSize(), bob.getStatus());
 
@@ -36,7 +33,6 @@ public class Ocean {
 
     // background ocean, has nothing to do with player
     public static void oceanBg(Graphics g, DrawingPanel p){
-
         for(int i = 0; i < 15; i++) {
             Random r = new Random();
             int x = r.nextInt(1150);
@@ -56,7 +52,6 @@ public class Ocean {
 
     //draw fish
     public static void drawFish(Graphics g, DrawingPanel p, int speed, int y, int size, boolean alive){
-
         int x = 0;
         if(speed < 0){
             x = 1200;
@@ -72,7 +67,6 @@ public class Ocean {
             p.sleep(500);
             g.setColor(Color.BLUE);
             g.fillOval(x - size + 2, y - size / 2, size * 2 + 3, size + 3);
-
         }
     }
 
