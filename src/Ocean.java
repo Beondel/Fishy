@@ -71,7 +71,7 @@ public class Ocean {
             //g.fillOval(x - size / 2, y, size / 8, size / 8);
             p.sleep(500);
             g.setColor(Color.BLUE);
-            g.fillOval(x - size, y - size / 2, size * 2, size);
+            g.fillOval(x - size + 2, y - size / 2, size * 2 + 3, size + 3);
 
         }
     }
