@@ -36,8 +36,6 @@ public class Ocean {
 
     // background ocean, has nothing to do with player
     public static void oceanBg(Graphics g, DrawingPanel p){
-        g.setColor(Color.ORANGE);
-        g.fillRect(0, 620, 1200, 100);
 
         for(int i = 0; i < 15; i++) {
             Random r = new Random();
