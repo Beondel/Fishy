@@ -17,13 +17,16 @@ public class Fish extends Ocean{
     }
 
     public boolean eat(){
+        return true;
     }
 
     public int behavior(){
+        return speed;
 
     }
 
-    public Graphics appearence(){
+    public int appearence(){
+        return size;
 
     }
 }

@@ -11,6 +11,14 @@ public class Ocean {
         Graphics g = p.getGraphics();
 
         oceanBg(g, p);
+
+        Fish bob = new Fish(2, 20, 100, true);
+
+        Player person = new Player();
+
+        while(person.getStatus() == true){
+
+        }
     }
 
     // background ocean, has nothing to do with player
