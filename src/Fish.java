@@ -3,7 +3,7 @@ import java.awt.*;
 /**
  * Created by benjaminmacmillan1 on 12/4/16.
  */
-public class Fish extends Ocean{
+public class Fish {
     private int speed;
     private int size;
     private int position;
