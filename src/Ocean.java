@@ -17,7 +17,7 @@ public class Ocean {
         Player person = new Player();
         //playerControl(person.getSize(), );
 
-        while(person.getStatus() == true){
+        while(person.getStatus()){
 
         }
     }
