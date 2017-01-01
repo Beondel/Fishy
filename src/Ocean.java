@@ -15,6 +15,7 @@ public class Ocean {
         Fish bob = new Fish(2, 20, 100, true);
 
         Player person = new Player();
+        //playerControl(person.getSize(), );
 
         while(person.getStatus() == true){
 
@@ -42,4 +43,9 @@ public class Ocean {
         g.setColor(Color.WHITE);
         g.fillOval(x + size / 5, y + size / 5, size / 4, size / 4);
     }
+
+    //play control class
+    //public static void playerControl(int size, int position, int speed){
+
+    //}
 }
