@@ -10,18 +10,19 @@ public class Ocean {
         p.setBackground(Color.BLUE);
         Graphics g = p.getGraphics();
         oceanBg(g, p);
+        for (int i =0; i < 5; i++) {
+            Random r = new Random();
+            // speed is -50 to 50
+            int speed = r.nextInt(6) * 20 - 50;
+            // size is 10 to 90
+            int size = r.nextInt(11) * 8 + 10;
+            // y is 10 to 720
+            int position = r.nextInt(72) * 10 + 10;
 
-        Random r = new Random();
-        // speed is -50 to 50
-        int speed = r.nextInt(6) * 20 - 50;
-        // size is 10 to 90
-        int size = r.nextInt(11) * 8 + 10;
-        // y is 10 to 720
-        int position = r.nextInt(72) * 10 + 10;
-
-        Fish bob = new Fish(speed, size, position, true);
-        // draw the fish
-        drawFish(g, p, bob.getSpeed(), bob.getPosition(), bob.getSize(), bob.getStatus());
+            Fish bob = new Fish(speed, size, position, true);
+            // draw the fish
+            drawFish(g, p, bob.getSpeed(), bob.getPosition(), bob.getSize(), bob.getStatus());
+        }
 
         Player person = new Player();
         //playerControl(person.getSize(), );
@@ -66,7 +67,7 @@ public class Ocean {
             //g.fillOval(x - size / 2, y, size / 8, size / 8);
             p.sleep(500);
             g.setColor(Color.BLUE);
-            g.fillOval(x - size + 2, y - size / 2, size * 2 + 3, size + 3);
+            g.fillOval(x - size , y - size / 2, size * 2 , size );
         }
     }
 
